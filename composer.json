@@ -1,7 +1,7 @@
 {
     "name": "farinspace/dryrun",
-    "description": "Gather intel on user-defined functions at runtime",
-    "keywords": ["unit test", "testing", "redefinition", "runkit", "monkeypatching", "interception"],
+    "description": "Gather intel on user-defined functions at runtime.",
+    "keywords": ["unit test", "testing", "spy", "redefinition", "runkit", "monkeypatching", "interception"],
     "homepage": "https://github.com/farinspace/dryrun",
     "license": "MIT",
     "authors": [
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DryRun\\": "src/"
+            "DryRun": "src/"
          }
     }
 }

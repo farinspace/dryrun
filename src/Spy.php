@@ -19,13 +19,13 @@ class Spy {
 	public function on() {
 		$args = func_get_args();
 		foreach( $args as $func ) {
-			Patchwork\replace( $func, function() {
-				$func = Patchwork\Stack\top( 'function' );
+			\Patchwork\replace( $func, function() {
+				$func = \Patchwork\Stack\top( 'function' );
 				if ( ! isset( $this->intel[ $func ] ) ) {
 					$this->intel[ $func ] = [];
 				}
 				array_push( $this->intel[ $func ], func_get_args() );
-				Patchwork\pass();
+				\Patchwork\pass();
 			} );
 		}
 		return $this;
