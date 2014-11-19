@@ -17,7 +17,8 @@
     },
     "autoload": {
         "psr-4": {
-            "DryRun\\": "src/"
+            "DryRun\\": "src/",
+            "": "src/"
          }
     }
 }
